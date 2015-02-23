@@ -33,7 +33,7 @@ end
 gem 'delayed_job_active_record'
 
 #for linux only
-#gem 'unicorn'
+gem 'unicorn'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
