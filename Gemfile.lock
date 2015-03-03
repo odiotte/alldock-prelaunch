@@ -178,6 +178,7 @@ DEPENDENCIES
   activeadmin
   coffee-rails (~> 3.2.1)
   delayed_job_active_record
+  jquery-rails
   pg
   pry
   rails (= 3.2.11)

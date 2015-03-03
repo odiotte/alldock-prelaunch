@@ -9,6 +9,7 @@ gem 'pg'
 
 gem 'activeadmin'
 
+gem 'jquery-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -33,7 +34,7 @@ end
 gem 'delayed_job_active_record'
 
 #for linux only
-gem 'unicorn'
+#gem 'unicorn'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

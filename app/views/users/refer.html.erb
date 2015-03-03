@@ -1,23 +1,64 @@
 <div class="header">
     <div class="content">
-        <p class="logo brandon">Harry&#8217;s</p>
-        <p class="byline brandon">THANK YOU FOR SIGNING UP</p>
+        <p class="thanks byline brandon">THANK YOU FOR SIGNING UP</p>
     </div>
 </div>
 
+
+
+<div id="countdown_dashboard" class="countdown">
+	<div class="title dash_title">Launching in</div>
+	<!--<div class="dash weeks_dash">
+		<span class="dash_title">weeks</span>
+		<div class="digit">0</div>
+		<div class="digit">0</div>
+	</div>-->
+
+	<div class="dash days_dash">
+		<span class="dash_title">days</span>
+		<div class="digit">0</div>
+		<div class="digit">0</div>
+	</div>
+
+	<div class="dash hours_dash">
+		<span class="dash_title">hours</span>
+		<div class="digit">0</div>
+		<div class="digit">0</div>
+	</div>
+
+	<div class="dash minutes_dash">
+		<span class="dash_title">minutes</span>
+		<div class="digit">0</div>
+		<div class="digit">0</div>
+	</div>
+
+	<div class="dash seconds_dash">
+		<span class="dash_title">seconds</span>
+		<div class="digit">0</div>
+		<div class="digit">0</div>
+	</div>
+</div>
 <div class="hero">
     <div class="page-content clearfix">
-        <div class="mammoth">
-            <span class="need brandon">Shaving Is<br>Evolving</span>
+		
+		<div class="description brandon">
+			<ul>
+				<li><img width="20px" src="<%= asset_path('alldock/check.png') %>"/><span>It's blazingly fast.</span> With 2400mA per USB exit, you'll be able to recharge your smartphone nearly 80% in less than 1 hour.</li>
+				<li><img width="20px" src="<%= asset_path('alldock/check.png') %>"/><span>It's eleguant.</span> Available in high-gloss white or black finishes as well as a walnut finish.</li>
+				<li><img width="20px" src="<%= asset_path('alldock/check.png') %>"/><span>It's convenient.</span> Up to 6 outputs compatible with the most common standard connectors like Lightning, 30-pin, micro-USB, etc.</li>
+			</ul>
+		</div>
+        <div class="product">
+            <img width="350px" src="<%= asset_path('alldock/Alldock large Verpackung 1.JPG') %>"/>
         </div>
         <div class="share-wrap">
             <p class="why brandon">Don't leave your friends behind</p>
-            <p class="title brandon">INVITE FRIENDS &<br>Earn Product</p>
-            <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn Harry's goods for<br>each friend who signs up.</p>
+            <p class="title brandon">INVITE FRIENDS &<br>Earn Discount</p>
+            <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn a discount on your All Dock purchase for<br>each friend who signs up.</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-            <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
+            <% twitter_message = "All Dock is coming. Fastest USB charging station." %>
             <div class="social-links">
-                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
+                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=All Dock" class="fb" target="_blank"></a>
                 <div class="sep"></div>
                 <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
             </div>
@@ -43,9 +84,9 @@
  %>
 <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
     <div class="page-content">
-        <p class="callout brandon">Here's How It Works:</p>
+        <p class="callout brandon">Your progress:</p>
         <ul class="products clearfix">
-            <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Harry's Product</p></li>
+            <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Earned discount</p></li>
             <% stops.each do |stop| %>
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
                     <div class="circle"><%= stop["count"] %></div>
@@ -61,7 +102,8 @@
 
         <div class="progress">
             <div class="mover">
-                <div class="bar clearfix"></div>
+				<div class="bar clearfix">
+				</div>
             </div>
         </div>
 
@@ -82,7 +124,25 @@
         <% end %>
         <p class="check brandon">Keep checking</p>
 
-        <p class="ship brandon">We ship to the U.S. (& Canada Soon)</p>        
-        <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
+        <div class="policy brandon"><a href="/privacy-policy" target="_blank">Privacy Policy</a></div>
     </div>
 </div>
+<script type="text/javascript">
+
+	$( document ).ready(function() {
+	
+
+	
+	$('#countdown_dashboard').countDown({
+					targetDate: {
+						'day': 		20,
+						'month': 	3,
+						'year': 	2015,
+						'hour': 	0,
+						'min': 		0,
+						'sec': 		0
+					},
+					omitWeeks: true
+				});
+	});
+</script>

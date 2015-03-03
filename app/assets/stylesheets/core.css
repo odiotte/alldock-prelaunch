@@ -34,8 +34,23 @@ html.home{
 	background: #EDECEA;
 }
 
+#home .hero .container-headers{
+	position: relative;
+	top:280px;
+	left:125px;
+}
+.container-headers .alldock-logo{
+	width: 300px;
+	height: 57px;
+	position: relative;
+	padding-bottom:40px;
+	background: url(/assets/alldock/alldock-logo.png) center center no-repeat;
+	background-size: 300px 57px;
+}
+
 #home{
-	padding-bottom: 50px;
+	padding-bottom: 40px;
+	overflow: hidden;
 }
 
 #home .page-content{
@@ -44,32 +59,57 @@ html.home{
 }
 
 #home .hero{
-	width: 100%;
-	height: 446px;
+	
+	
+	/*height: 446px;
 	background: url(/assets/home/hero.jpg) center center no-repeat;
-	background-size: 1600px 446px;
+	background-size: 1600px 446px;*/
+	
 	overflow: hidden;
 	position: relative;
 	letter-spacing: .09em;
 	margin: 0 auto;
+	z-index: -2;
 }
-
+#home .banner_1{
+	width: 100%;
+	height: 746px;
+	background: url(/assets/alldock/alldock-banner-home1.jpg) center center no-repeat;
+	background-size: 1600px 746px;
+}
+#home .banner_2{
+	width: 100%;
+	height: 746px;
+	background: url(/assets/alldock/alldock-banner-home1.jpg) center center no-repeat;
+	background-size: 1600px 746px;
+}
+#home .banner_3{
+	width: 100%;
+	height: 746px;
+	background: url(/assets/alldock/alldock-banner-home1.jpg) center center no-repeat;
+	background-size: 1600px 746px;
+}
 #home .hero .large{
+	padding-top:10px;
+	padding-left:15px;
 	font-weight: bold;
-	font-size: 40px;
-	color: #074E6F;
-	text-transform: uppercase;
-	margin: 85px 0 0 136px;
+	font-size: 28px;
+	/*font-size: 40px;*/
+	/*color: #074E6F;*/
+	color: #dd691c;
+	/*text-transform: uppercase;*/
+	/*margin: 85px 0 0 136px;*/
 	position: relative;
-	z-index: 2;
-	letter-spacing: 2px;
+	z-index: 999;
+	/*letter-spacing: 2px;*/
+	letter-spacing: 1px;
 }
 
 #home .hero .small{
 	font-weight: bold;
 	color: #955F5D;
 	font-size: 18px;
-	margin: 10px 0 0 115px;
+	/*margin: 10px 0 0 115px;*/
 	line-height: 30px;
 	position: relative;
 	z-index: 2;
@@ -80,11 +120,17 @@ html.home{
 }
 
 #home .form-wrap{
-	height: 80px;
+	border:#dd691c solid 2px;
+	padding:25px;
 	width: 411px;
-	margin: 23px auto 0;
+	margin: -90px auto 0;
+	position:relative;
+	z-index: 999;
+	background: #EDECEA;
+	background-size: 411px 80px;
+	
 }
-
+/*
 #home .form-wrap .key{
 	width: 46px;
 	height: 19px;
@@ -92,11 +138,11 @@ html.home{
 	background: url(/assets/home/key.png) 0 0 no-repeat;
 	background-size: 46px 19px;
 }
-
+*/
 #home .form-wrap .byline{
 	font-size: 15px;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: #dd691c;
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -107,7 +153,7 @@ html.home{
 	float: left;
 	font-size: 13px;
 	padding: 8px 0 8px 10px;
-	border: 1px solid #074E6F;
+	border: 1px solid #dd691c;
 	width: 256px;
 	outline: none;
 	letter-spacing: 1px;
@@ -115,14 +161,15 @@ html.home{
 
 #home .form-wrap .submit{
 	width: 143px;
-	background: #074E6F;
+	background: #dd691c;
 	float: left;
-	height: 37px;
-	line-height: 37px;
+	height: 33px;
+	line-height: 33px;
 	color: #FFF;
 	font-size: 13px;
 	text-transform: uppercase;
 	border: 0;
+	outline: none;
 	letter-spacing: 2px;
 }
 
@@ -255,7 +302,7 @@ html.home{
 }
 
 #refer .page-content{
-	width: 1120px;
+	width: 1300px;
 	margin: 0 auto;
 	z-index: 0;
 	position: relative;
@@ -263,7 +310,7 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+	background: #dd691c;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -271,7 +318,7 @@ html.home{
 }
 
 #refer .header .content{
-	width: 315px;
+	width: 215px;
 	margin: 0 auto;
 }
 
@@ -281,6 +328,7 @@ html.home{
 	font-weight: 500;
 	text-transform: uppercase;
 	line-height: 50px;
+	font-weight:bold;
 }
 
 #refer .header .byline{
@@ -301,11 +349,50 @@ html.home{
 }
 
 #refer .hero{
-	background: #F1F0EE;
+	background: #FFF;
 	height: 391px;
 	overflow: hidden;
+	position:relative;
 }
-
+#refer .countdown{
+	text-align: center;
+	width: 550px;
+	margin: 0 auto;
+	position:relative;
+	padding:10px 0 50px 0;
+}
+#refer .countdown .title{
+	position:relative;
+	padding:10px 0 10px 0;
+}
+#refer .description{
+	width: 400px;
+	height: 400px;
+	padding-top:60px;
+	overflow: hidden;
+	margin-top: 15px;
+	float: left;
+}
+#refer .description li{
+	color:#555556;
+	padding:15px;
+	font-weight:bold;
+}
+#refer .description img{
+	padding-right:10px;
+}
+#refer .description span{
+	color:#dd691c;
+}
+#refer .product{
+	width: 400px;
+	height: 400px;
+	
+	overflow: hidden;
+	margin-top: 15px;
+	float: left;
+}
+/*
 #refer .mammoth{
 	width: 612px;
 	height: 394px;
@@ -315,7 +402,7 @@ html.home{
 	margin-top: 15px;
 	float: left;
 }
-
+*/
 #refer .mammoth .need{
 	color: #FFF;
 	font-size: 38px;
@@ -350,7 +437,7 @@ html.home{
 	line-height: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: #dd691c;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
@@ -406,7 +493,7 @@ html.home{
 
 #refer .prizes{
 	width: 100%;
-	background: #FFF;
+	background: #F1F0EE;
 	border-top: 1px solid #D2D1C8;
 	padding-bottom: 100px;
 }
@@ -437,16 +524,25 @@ html.home{
 
 #refer .prizes .progress .mover{
 	position: absolute;
-	top: 0;
+	top: -3px;
 	left: 0;
 }
-
+/*
 #refer .prizes .progress .mover .bar{
+	top:-5px;
 	background: url(/assets/refer/progress-done.png) 0 0 repeat-x;
 	width: 165px;
 	height: 4px;
 	-webkit-background-size: 1px 4px;
 	background-size: 1px 4px;
+}
+*/
+#refer .prizes .progress .mover .bar{
+	background: url(/assets/alldock/load-bar.gif) 0 0 repeat-x;
+	width: 165px;
+	height: 13px;
+	-webkit-background-size: 96px 13px;
+	background-size: 96px 13px;
 }
 
 #refer .prize-two .progress .mover .bar{ width: 312px; }
@@ -476,12 +572,12 @@ html.home{
 }
 
 #refer .prizes .products li.title .friends{
-	margin-top: 7px;
+	margin-top: 20px;
 	letter-spacing: 2px;
 }
 
 #refer .prizes .products li.title .rewards{
-	margin-top: 45px;
+	margin-top: 40px;
 	letter-spacing: 2px;
 }
 
@@ -498,12 +594,12 @@ html.home{
 	height: 30px;
 	width: 30px;
 	border-radius: 15px;
-	border: 1px solid #DAD9D2;
+	border: 1px solid #dd691c;
 	text-align: center;
 	line-height: 30px;
-	color: #868282;
+	color: #dd691c;
 	overflow: hidden;
-	background: #F1F0EE;
+	background: #fff;
 	font-weight: bold;
 	margin: 0 auto;
 }
@@ -543,22 +639,22 @@ html.home{
 }
 
 #refer .prizes .products li.product.selected .circle{
-	background: #995F5E !important;
-	border-color: #995F5E !important;
+	background: #dd691c !important;
+	border-color: #dd691c !important;
 	color: #FFF !important;
 }
 
-
+/*
 #refer .prizes .products li.product.selected p{
 	color: #995F5E !important;
-}
-
+}*/
+/*
 #refer .prizes .products li.product:hover .circle{
 	color: #FFF;
 	background: #074E6F;
 	border-color: #074E6F;
 }
-
+*/
 #refer .prizes .products li.product .tooltip{
 	height: 254px;
 	width: 190px;
@@ -610,17 +706,52 @@ html.home{
 	margin-top: 50px;
 }
 
-#refer .prizes a.policy{
+#refer .prizes .policy{
 	text-align: center;
-	font-size: 12px;
-	color: #CCCCCC;
 	width: 100%;
-	font-weight: 500;
 	margin-top: 5px;
 	display: block;
+}
+#refer .prizes .policy a{
+	font-size: 12px;
+	font-weight: 500;
 	text-decoration: none;
+	color: #CCCCCC;
 }
 
+#banner-pager-wrapper {
+    height: 28px;
+	padding-left:50%;
+	left:-100px;
+	top:-90px;
+    position:relative;
+    width: 120px;
+    z-index: 998;
+}
+#banner-pager {
+    float: right;
+    padding: 0 3px 0 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif !important;
+}
+#banner-pager li {
+    float: left;
+    height: 28px;
+    margin-left: -3px;
+    padding: 0 1px 0 2px;
+}
+#banner-pager li a {
+    color: #000;
+    font-family: ;
+    font-size: 36px !important;
+    display: block;
+    margin-top: -6px;
+}
+#banner-pager li a:hover {
+    color: #999;
+}
+#banner-pager li.activeSlide a, #banner-pager li.activeSlide a:hover {
+    color: #fff;
+}
 
 
 /*
