@@ -34,32 +34,25 @@ html.home{
 	background: #EDECEA;
 }
 
-#home .hero .container-headers{
-	position: relative;
-	top:280px;
-	left:125px;
-}
-.container-headers .alldock-logo{
-	width: 300px;
-	height: 57px;
-	position: relative;
-	padding-bottom:40px;
-	background: url(/assets/alldock/alldock-logo.png) center center no-repeat;
-	background-size: 300px 57px;
-}
+
 
 #home{
 	padding-bottom: 40px;
 	overflow: hidden;
 }
 
-#home .page-content{
-	width: 1400px;
+#home .page{
+	width: 1600px;
 	margin: 0 auto;
 }
 
 #home .hero{
 	
+	width: 100%;
+	
+	height: 746px;
+	background: url(/assets/alldock/alldock-banner-home1.jpg) center center no-repeat;
+	background-size: 1600px 746px;
 	
 	/*height: 446px;
 	background: url(/assets/home/hero.jpg) center center no-repeat;
@@ -71,23 +64,18 @@ html.home{
 	margin: 0 auto;
 	z-index: -2;
 }
-#home .banner_1{
-	width: 100%;
-	height: 746px;
-	background: url(/assets/alldock/alldock-banner-home1.jpg) center center no-repeat;
-	background-size: 1600px 746px;
+#home .hero .container-headers{
+	position: relative;
+	top:280px;
+	left:125px;
 }
-#home .banner_2{
-	width: 100%;
-	height: 746px;
-	background: url(/assets/alldock/alldock-banner-home1.jpg) center center no-repeat;
-	background-size: 1600px 746px;
-}
-#home .banner_3{
-	width: 100%;
-	height: 746px;
-	background: url(/assets/alldock/alldock-banner-home1.jpg) center center no-repeat;
-	background-size: 1600px 746px;
+#home .hero .container-headers .alldock-logo{
+	width: 300px;
+	height: 57px;
+	position: relative;
+	padding-bottom:40px;
+	background: url(/assets/alldock/alldock-logo.png) center center no-repeat;
+	background-size: 300px 57px;
 }
 #home .hero .large{
 	padding-top:10px;
@@ -300,7 +288,10 @@ html.home{
 #refer{
 	background: #FFF;
 }
-
+#refer .page{
+	width: 1600px;
+	margin: 0 auto;
+}
 #refer .page-content{
 	width: 1300px;
 	margin: 0 auto;
@@ -368,7 +359,7 @@ html.home{
 #refer .description{
 	width: 400px;
 	height: 400px;
-	padding-top:60px;
+	padding-top:20px;
 	overflow: hidden;
 	margin-top: 15px;
 	float: left;
@@ -761,8 +752,8 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 	#home .hero{
-		background: url(/assets/home/hero@2x.jpg) center center no-repeat;
-		background-size: 1600px 446px;
+		background: url(/assets/alldock/alldock-banner-home1.jpg) center center no-repeat;
+		background-size: 1600px 746px;
 	}
 
 	#home .form-wrap .key{
@@ -815,44 +806,3 @@ only screen and (min-device-pixel-ratio: 2) {
 		background-size: 16px 10px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
