@@ -45,7 +45,27 @@ html.home{
 	width: 1600px;
 	margin: 0 auto;
 }
-
+#home .hero .container-switch-lang{
+	width:100px;
+	height:50px;
+	padding-top:25px;
+	padding-right:25px;
+	position:relative;
+	float:right;
+}
+#home .hero .container-switch-lang .switch-lang {
+	
+	padding:10px;
+	border:2px solid #dd691c;
+	color:#dd691c;
+	background-color:#FFF;
+	text-decoration: none;
+	z-index: 10;
+	
+}
+#home .hero .container-switch-lang .switch-lang:hover{
+	background-color:#DDD;
+}
 #home .hero{
 	
 	width: 100%;
@@ -62,26 +82,29 @@ html.home{
 	position: relative;
 	letter-spacing: .09em;
 	margin: 0 auto;
-	z-index: -2;
+	
 }
 #home .hero .container-headers{
 	position: relative;
+	width:400px;
 	top:280px;
 	left:125px;
+	text-align:center;
 }
 #home .hero .container-headers .alldock-logo{
 	width: 300px;
 	height: 57px;
+	margin: 0 auto;
 	position: relative;
-	padding-bottom:40px;
+	padding-bottom:35px;
 	background: url(/assets/alldock/alldock-logo.png) center center no-repeat;
 	background-size: 300px 57px;
 }
 #home .hero .large{
 	padding-top:10px;
-	padding-left:15px;
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 30px;
+	font-weight: bold;
 	/*font-size: 40px;*/
 	/*color: #074E6F;*/
 	color: #dd691c;
@@ -89,8 +112,8 @@ html.home{
 	/*margin: 85px 0 0 136px;*/
 	position: relative;
 	z-index: 999;
-	/*letter-spacing: 2px;*/
-	letter-spacing: 1px;
+	letter-spacing: 2px;
+	
 }
 
 #home .hero .small{
